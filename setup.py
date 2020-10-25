@@ -41,7 +41,7 @@ elif environ.get('GITHUB_REF'):
 
     version = environ['GITHUB_REF'].replace('refs/tags/v', '')
 else:
-    raise ValueError('Missing commit tag, can\'t set version')
+    version = "v0.9.25-tsukistaking"
 
 here = path.abspath(path.dirname(__file__))
 
